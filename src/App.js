@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div>
       <button className={className} onClick={changeColor}>
-        Поменять цвет
+        Изменить цвет кнопки на {className === 'red' ? 'Жёлтый' : 'Красный'}
       </button>
     </div>
   );
