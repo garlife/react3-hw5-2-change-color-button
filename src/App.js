@@ -1,19 +1,25 @@
-import React, {useState} from "react";
-import "./style.css";
+import React, { useState } from 'react';
+import './style.css';
 
 export default function App() {
-const [className, setClassName] = useState('red');
+  const [className, setClassName] = useState('red');
+  const [isColorRed, setIsColorRed] = useState(false);
 
- const changeColor = () => {setClassName('yellow' )};
+  const changeColor = () => {
+    setIsColorRed(!isColorRed);
+    console.log(isColorRed);
+    if (isColorRed === true){
+      return (setClassName('red'))
+    }
+    return (setClassName('yellow'));
+  };
+
 
   return (
     <div>
-      <button className={
-        if (className !== 'red'){
-          return className ==='yellow'
-        }
-        return red
-        } onClick={changeColor}>Поменять цвет</button>
+      <button className={className} onClick={changeColor}>
+        Поменять цвет
+      </button>
     </div>
   );
 }
