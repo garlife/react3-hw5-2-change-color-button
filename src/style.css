@@ -4,9 +4,10 @@ h1, p {
 
 .red {
   background-color: red;
-  font: bold;
+  color: yellow;
 }
 
 .yellow {
   background-color: yellow;
+  color: red
 }
