@@ -1,0 +1,12 @@
+h1, p {
+  font-family: Lato;
+}
+
+.red {
+  background-color: red;
+  font: bold;
+}
+
+.yellow {
+  background-color: yellow;
+}
